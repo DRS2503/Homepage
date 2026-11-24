@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+}
+
+main{
+    margin: 0;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.flex-spacebetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h4{
+    margin: 0;
+    padding: 0;
+}
+
+.socails{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+header{
+    padding: 2rem 1rem;
+    background-color: #0891b2;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+}
+
+.about-me{
+    height: 300px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.4);
+    background-color: white;
+}
+
+.about-me .socails{
+    margin-bottom: 1rem;
+    height: 50px;
+    justify-content: right;
+    align-items: end;
+}
+
+
+
+
+
+
+
+
+
+section{
+    padding: 2rem 1rem;
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card{
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+    aspect-ratio: .9;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.4);
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bottom{
+    padding: .5rem 1.25rem;
+}
+
+.card-grid svg{
+    width: 25px;
+    heigh: 25px;
+}
+
+.card p{
+    margin: .5rem 0;
+}
+
+
+
+
+
+
+footer{
+    padding: 2rem 1rem;
+    background-color: #0891b2;
+    color: white;
+}
+
+.two-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.two-col img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contact-info{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.contact-container svg{
+    width: 25px;
+    height: 25px;
+    fill: white;
+}
+
+.socails svg{
+    width: 40px;
+    height: 40px;
+}
+
