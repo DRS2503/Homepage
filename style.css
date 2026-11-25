@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    overflow-wrap: break-word;
 }
 
 main{
@@ -15,6 +16,14 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
 }
 
 h4{
@@ -37,9 +46,24 @@ h4{
 
 
 
-header{
-    padding: 2rem 1rem;
-    background-color: #0891b2;
+
+header {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;   
+  padding: 2rem 1rem;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -40%; 
+  width: 150%;         
+  height: 150%;
+  background-color: #0891b2;
+  transform: rotate(-10deg); 
+  z-index: -1;
 }
 
 .header-container{
@@ -48,6 +72,7 @@ header{
 }
 
 .about-me{
+    flex: 1;
     height: 300px;
     padding: 1rem;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.4);
@@ -70,11 +95,16 @@ header{
 
 
 section{
-    padding: 2rem 1rem;
+    padding: 0 1rem 3rem 1rem;
+}
+
+header h1{
+    margin: 0;
 }
 
 .card-grid{
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
@@ -91,6 +121,7 @@ section{
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white;
 }
 
 .bottom{
@@ -99,7 +130,7 @@ section{
 
 .card-grid svg{
     width: 25px;
-    heigh: 25px;
+    height: 25px;
 }
 
 .card p{
@@ -146,3 +177,44 @@ footer{
     height: 40px;
 }
 
+.footer-content svg{
+    fill: white;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .card-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+  .header-container{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .about-me{
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-grid{
+        grid-template-columns: 1fr;
+    }
+    .two-col{
+        grid-template-columns: 1fr;
+    }
+    .two-col img{
+        display: none;
+    }
+    .header-container{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .about-me{
+        box-shadow: none;
+    }
+    header::before{
+        top: -115%;
+    }
+}
