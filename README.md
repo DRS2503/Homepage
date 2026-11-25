@@ -1,3 +1,4 @@
+
 # Homepage
 Project to create a responsive template homepage.
 
@@ -8,5 +9,7 @@ This project was to focus on designing a website using Accessibility and respons
 To run this yourself all you have to do is pull the repo, and copy the file path to index.html in your browser. This website is not hosted because it is just practice.
 
 ## Demo
+https://github.com/user-attachments/assets/bfe531de-db69-48b9-acd6-51e6653c8195
+
 
 
